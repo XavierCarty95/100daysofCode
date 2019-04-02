@@ -1,0 +1,27 @@
+//Functions allow you to package up lines of code that you can use (and often reuse) in your programs. 
+
+function reheatPizza(numSlices) {
+  // code that figures out reheat settings!
+}
+
+function reverseString(reverseMe) {
+  // code to reverse a string!
+}
+
+
+
+function doubleGreeting(name, otherName) {
+  // code to greet two people!
+}
+
+// accepts no parameters! parentheses are empty
+function sayHello() {
+  var message = "Hello!"
+  console.log(message);
+}
+
+// declares the sayHello function
+function sayHello() {
+  var message = "Hello!"
+  return message; // returns value instead of printing it
+}
