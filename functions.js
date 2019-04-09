@@ -28,3 +28,10 @@ function sayHello() {
 
 //A function that is passed into another function is called a callback.
 // function inside a variable is called a function expression 
+
+// Declare a function called laugh() that returns "hahahahahahahahahaha!". Print the value returned from the laugh() function to the console
+
+function laugh() {
+    return "hahahahahahahahahaha!"
+}
+console.log(laugh());
