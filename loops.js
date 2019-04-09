@@ -28,3 +28,11 @@ for (let i = 1; i <= 12; i++) {
 }
 
 console.log(solution);
+
+// write how much different combinations for theatre seat 0-26
+
+for (var x = 0; x < 26; x ++ ){
+  for (var y = 0; y < 100; y ++ ){
+    console.log(x +'-'+ y);
+  }
+}
