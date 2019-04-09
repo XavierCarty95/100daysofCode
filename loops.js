@@ -19,3 +19,12 @@ for ( var x = 9 ; x >= 1; x--) {
   
 }
 
+/*
+ * Programming Quiz: Factorials (4-7)
+ */
+let solution = 1;
+for (let i = 1; i <= 12; i++) {
+  solution *= i;
+}
+
+console.log(solution);
