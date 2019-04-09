@@ -25,3 +25,6 @@ function sayHello() {
   var message = "Hello!"
   return message; // returns value instead of printing it
 }
+
+//A function that is passed into another function is called a callback.
+// function inside a variable is called a function expression 
