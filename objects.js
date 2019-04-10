@@ -10,3 +10,23 @@ var sister = {
   favoriteColor: "purple",
   pets: true
 };
+// two equivalent ways to use the key to return its value
+sister["parents"] // returns [ "alice", "andy" ]
+sister.parents // also returns ["alice", "andy"]
+
+// printing message to object that returns total balnace plus interest rate
+var savingsAccount = {
+  balance: 1000,
+  interestRatePercent: 1,
+  deposit: function addMoney(amount) {
+    if (amount > 0) {
+      savingsAccount.balance += amount;
+    }
+  },
+  withdraw: function removeMoney(amount) {
+    var verifyBalance = savingsAccount.balance - amount;
+    if (amount > 0 && verifyBalance >= 0) {
+      savingsAccount.balance -= amount;
+    }
+  }
+};
