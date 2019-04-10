@@ -18,3 +18,19 @@ function displayPosts() {
 }
 
 displayPosts();
+
+const gemstone = {
+  type: 'quartz',
+  color: 'rose',
+  carat: 21.29
+};
+
+// And this example shows extracting values from an object.
+
+// Both are pretty straightforward, however, neither of these examples are actually using destructuring
+
+const type = gemstone.type;
+const color = gemstone.color;
+const carat = gemstone.carat;
+
+console.log(type, color, carat)
