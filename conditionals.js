@@ -50,19 +50,10 @@ switch (option) {
     break;
   case 5:
     console.log("You selected option 5.");
-    break;
+    breakd
   case 6:
     console.log("You selected option 6.");
     break; // technically, not needed
 }
 
 //shorthand code ES6
-let type = "gold"
-let color = "blue"
-let carat = "21savage"
-let gemstone = {
-  type,
-  color,
-  carat,
-  calculateWorth() { }
-};
