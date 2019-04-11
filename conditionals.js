@@ -55,3 +55,14 @@ switch (option) {
     console.log("You selected option 6.");
     break; // technically, not needed
 }
+
+//shorthand code ES6
+let type = "gold"
+let color = "blue"
+let carat = "21savage"
+let gemstone = {
+  type,
+  color,
+  carat,
+  calculateWorth() { }
+};
