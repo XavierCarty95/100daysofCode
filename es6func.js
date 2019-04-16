@@ -1,6 +1,6 @@
 // mapping functions in block body syntax.
 
-const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map( name => {
+const upperizedssNames = ['Farrin', 'Kagure', 'Asser'].map( name => {
   name = name.toUpperCase();
   return `${name} has ${name.length} characters in their name`;
 });
@@ -18,3 +18,15 @@ sayHi();
 // multiple parameters requires parentheses
 const orderIceCream = (flavor, cone) => console.log(`Here's your ${flavor} ice cream in a ${cone} cone.`);
 orderIceCream('chocolate', 'waffle');
+
+// All of the arrow functions we've been looking at have only had a single expression as the function body:
+const upperizedseNames = ['Farrin', 'Kagure', 'Asser'].map(
+  name => name.toUpperCase()
+);
+// If you need more than just a single line of code in your arrow function's body, then you can use the "block body syntax"
+
+
+const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map( name => {
+  name = name.toUpperCase();
+  return `${name} has ${name.length} characters in their name`;
+});
