@@ -25,8 +25,51 @@ const upperizedseNames = ['Farrin', 'Kagure', 'Asser'].map(
 );
 // If you need more than just a single line of code in your arrow function's body, then you can use the "block body syntax"
 
-
+// With regular functions, the value of this is set based on how the function is called. With arrow functions, the value of this is based on the function's surrounding context. In other words, the value of this inside an arrow function 
+// is the same as the value of this outside the function.
 const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map( name => {
   name = name.toUpperCase();
   return `${name} has ${name.length} characters in their name`;
 });
+
+// constructor
+function IceCream() {
+  this.scoops = 0;
+}
+
+// adds scoop to ice cream
+IceCream.prototype.addScoop = function() {
+  setTimeout(function() {
+    this.scoops++;
+    console.log('scoop added!');
+  }, 500);
+};
+
+const dessert = new IceCream();
+dessert.addScoop();
+
+
+
+
+
+
+
+// The code above will work because instead of using this inside the function, 
+// // it sets the cone variable to this and then looks up the cone variable when the function is called. This works because it's using the value of the this outside the function. So if we check the number of scoops in our dessert right now, 
+// we'll see the correct value of 1
+// constructor
+function IceCream() {
+  this.scoops = 0;
+}
+
+// adds scoop to ice cream
+IceCream.prototype.addScoop = function() {
+  const cone = this; // sets `this` to the `cone` variable
+  setTimeout(function() {
+    cone.scoops++; // references the `cone` variable
+    console.log('scoop added!');
+  }, 0.5);
+};
+
+const dessert = new IceCream();
+dessert.addScoop();
