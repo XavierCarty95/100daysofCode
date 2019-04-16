@@ -57,3 +57,4 @@ switch (option) {
 }
 
 //shorthand code ES6
+-
